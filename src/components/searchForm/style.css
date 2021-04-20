@@ -7,8 +7,27 @@ input [type=text] {
   box-sizing: border-box;
   border: 1px solid #555;
   outline: none;
+  transition: width 0.4s ease-in-out;
 }
 
 input[type=text]:focus {
     background-color: lightblue;
+    width: 25rem;
+    height: 2rem;
+}
+#submit {
+  border-radius: 25%;
+  width: 4.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+#submit:hover {
+  background-color: lightblue;
+  color:black;
+  height:2.7rem;
 }
