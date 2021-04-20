@@ -49,4 +49,4 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 
 ## Bugs
 
--   No known bugs currently
+-   Webpage is not responsive on mobile/tablet devices
