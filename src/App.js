@@ -5,13 +5,15 @@ import './App.css'
 
 function App() {
 
-  const [username, setUsername] = useState("theduckfliesagain");
+  const [username, setUsername] = useState("");
 
   return (
     <>
-      <h1>Hello World!</h1>
-      < SearchForm />
+      < SearchForm setUsername={setUsername} />
+      <h3 aria-label="Form" id="Form"> {username ? username : 'Friend'}, Your repositories are below:</h3>
       < RepoList username={username} />
     </>
   )
+}
+
 export default App
