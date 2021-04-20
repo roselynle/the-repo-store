@@ -1,4 +1,4 @@
-# Your Repo Story
+# Your Repo Story :book:
 
 Are you as popular on GitHub as you think you are? Well now you can find out! Our repo tracker allows you to search for a particular GitHub user and retrieve their list of repos, including data such as description and the number of forks, stars and watches. A link to the repo is also auto-generated.
 
