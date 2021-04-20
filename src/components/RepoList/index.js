@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { RepoCard } from '..';
+import { RepoCard, UserCard } from '..';
 
 
 const API_URL = "https://api.github.com"
@@ -7,6 +7,7 @@ const API_URL = "https://api.github.com"
 const RepoList = ({ username }) => {
 
     const [repos, setRepos] = useState();
+    const [user, setUser] = useState();
 
     useEffect(() => {
         const getRepos = async () => {
@@ -18,15 +19,25 @@ const RepoList = ({ username }) => {
                 console.error(error);
             }
         }
+        const getUser = async () => {
+            try {
+                const response = await fetch(`${API_URL}/users/${username}`);
+                const data = await response.json();
+                setUser(data);
+            } catch (error) {
+                console.error(error);
+            }
+        }
+
         getRepos();
+        getUser();
     }, [username]);
-   
-    // 
-    console.log(repos);
+
     const reposList = Array.isArray(repos) && repos.map(repo => <RepoCard key={repo.id} repo={repo} />);
 
     return (
         <section className="user-repos">
+            {user && <UserCard user={user} />}
             {reposList}
         </section>
     )
