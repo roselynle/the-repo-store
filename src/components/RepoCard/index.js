@@ -2,12 +2,12 @@ import React from 'react';
 import { BiGitRepoForked, BiStar,  } from "react-icons/bi";
 import { BsEyeFill } from "react-icons/bs";
 
-const repoCard = ({ repo }) => {
+const RepoCard = ({ repo }) => {
     return (
         <div className="repo">
             <div className="repo-info">
                 <a href={repo.url} target="_blank">
-                    <h2>{repo.title}</h2>
+                    <h2>{repo.name}</h2>
                 </a>
                 <p>{repo.description}</p>
             </div>
@@ -26,4 +26,4 @@ const repoCard = ({ repo }) => {
     )
 }
 
-export default repoCard;
+export default RepoCard;
