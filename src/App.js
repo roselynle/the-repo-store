@@ -1,17 +1,17 @@
-import React from 'react'
-import {SearchForm} from './components'
+import React, { useState } from 'react'
+import { SearchForm, RepoList } from './components';
+
 import './App.css'
 
 function App() {
-    return (
-      <>
-      
-     
-       <h1>Hello World!</h1>
-       <SearchForm />
-       
-      </>
-    )
-}
 
+  const [username, setUsername] = useState("theduckfliesagain");
+
+  return (
+    <>
+      <h1>Hello World!</h1>
+      < SearchForm />
+      < RepoList username={username} />
+    </>
+  )
 export default App
