@@ -1,4 +1,4 @@
-# React Template
+# The Repo Store
 
 Are you as popular on GitHub as you think you are? Well now you can find out! Our repo tracker allows you to search for a particular GitHub user and retrieve their list of repos, including stats such as stargazers and forks
 
