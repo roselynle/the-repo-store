@@ -6,7 +6,7 @@ const RepoCard = ({ repo }) => {
     return (
         <div className="repo">
             <div className="repo-info">
-                <a href={repo.url} target="_blank">
+                <a href={repo.html_url} target="_blank">
                     <h2>{repo.name}</h2>
                 </a>
                 <p>{repo.description}</p>
