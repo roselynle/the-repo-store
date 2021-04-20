@@ -14,7 +14,7 @@ const SearchForm = ({setUsername}) => {
      return (
         <>
         <form onSubmit={handleFormSubmit}>
-          <label htmlFor="username">GitHub Username: </label>
+          <label id="form" htmlFor="username">GitHub Username: </label>
           <input type="text" id="username" name="username" placeholder="Please enter your username" value={nameInput} onChange={handleInput}/>
           <input type="submit" id="submit" value="Submit"/>
         </form>
