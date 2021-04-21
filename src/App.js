@@ -1,5 +1,24 @@
-import React from 'react'
+import React, { useState } from "react";
+import { SearchForm, RepoList, Header} from "./components";
+import "./App.css";
 
-const App = () => <h1>Hello World!</h1>
+function App() {
+    const [username, setUsername] = useState("");
 
-export default App
+    return (
+        <>
+            <Header />
+            <SearchForm setUsername={setUsername} />
+            <div id="text-container">
+                <h3 aria-label="Form" id="Form">
+                    {" "}
+                    {username ? username : "Coder"}, your repositories are
+                    below:
+                </h3>
+                <RepoList username={username} />
+            </div>
+        </>
+    );
+}
+
+export default App;
