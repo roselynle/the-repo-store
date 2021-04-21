@@ -1,6 +1,6 @@
-# Your Repo Story
+# Your Repo Story :book:
 
-Are you as popular on GitHub as you think you are? Well now you can find out! Our repo tracker allows you to search for a particular GitHub user and retrieve their list of repos, including stats such as watchers, stargazers and forks
+Are you as popular on GitHub as you think you are? Well now you can find out! Our repo tracker allows you to search for a particular GitHub user and retrieve their list of repos, including data such as description and the number of forks, stars and watches. A link to the repo is also auto-generated.
 
 This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-sobamowo](https://github.com/emmanuel-sobamowo) and [@theduckfliesagain](https://github.com/theduckfliesagain) as part of Futureproof's Coding Challenge.
 
@@ -38,13 +38,15 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 ### Wins
 
 -   Making successful calls to the GitHub API in order to retreive the data we wanted
--   Using the react icons library to include icons for forks, stars and wacthers
+-   Using the react icons library to include icons for forks, stars and watchers
+-   Managing to style the page in a 'timeline' format (although repos are displayed in alphabetical order - perhaps sorting by oldest to newst can be a future feature)
 
 ### Challenges
 
 -   Coming up with error messages when trying to retrieve user data. This was due to the app attempting to render the UserCard component before the data had been fetched, the bug was later solved
 -   Git flow issues due to having to rename components part way through. The components were initially named in camel case whereas react requires it to be in upper case
+-   Hitting the API rate limit on a number of occasions whilst building the app
 
 ## Bugs
 
--   No known bugs currently
+-   Webpage is not responsive on mobile/tablet devices
