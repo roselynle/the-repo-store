@@ -1,7 +1,6 @@
 import React from 'react';
 
 const UserCard = ({user}) => {
-    console.log(user);
     return (
         <section className="user">
             <div className="user-info">
@@ -11,7 +10,7 @@ const UserCard = ({user}) => {
              
             </div>
             <div className="user-avatar">
-                <img src={user.avatar_url} />
+                <img src={user.avatar_url} alt={`${user.login}'s avatar`}/>
             </div>
         </section>
     )
