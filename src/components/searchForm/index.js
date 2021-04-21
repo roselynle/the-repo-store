@@ -1,8 +1,9 @@
 import React, {useState} from "react";
 import './style.css'
 
-const SearchForm = ({setUsername}) => {
+const SearchForm = () => {
     const [ nameInput, setNameInput ] = useState("");
+    const [username, setUsername] = useState("")
 
     const handleInput = e => setNameInput(e.target.value);
 
