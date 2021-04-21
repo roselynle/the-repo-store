@@ -53,3 +53,7 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 ## Bugs
 
 -   Webpage is not responsive on mobile/tablet devices
+
+## Future Features
+
+-   Dark Mode (for example using the useContext hook)
