@@ -42,13 +42,14 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 -   Making successful calls to the GitHub API in order to retreive the data we wanted
 -   Using the react icons library to include icons for forks, stars and watchers
 -   Managing to style the page in a 'timeline' format (although repos are displayed in alphabetical order - perhaps sorting by newest to oldest can be a future feature)
+-   Alert message will pop up if you search for an invalid user
 
 ### Challenges
 
 -   Coming up with error messages when trying to retrieve user data. This was due to the app attempting to render the UserCard component before the data had been fetched, the bug was later solved
 -   Git flow issues due to having to rename components part way through. The components were initially named in camel case whereas react requires it to be in upper case
 -   Hitting the API rate limit on a number of occasions whilst building the app
--   Issues testing with fetch, ended up switching to Axios
+-   Challenges with deciding on the best way to perform unit tests. There were also issues with testing with fetch (due to mutiple get requests), ended up switching to Axios. 
 
 ## Bugs
 
@@ -57,3 +58,4 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 ## Future Features
 
 -   Dark Mode (for example using the useContext hook)
+-   Function to sort retrieved repos by newest to oldest (e.g. by create date)
