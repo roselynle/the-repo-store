@@ -23,6 +23,7 @@ const RepoList = ({ username }) => {
             try {
                 const response = await fetch(`${API_URL}/users/${username}`);
                 const data = await response.json();
+                if (data.documentation_url === "https://docs.github.com/rest/reference/users#get-a-user") {alert("Error: not a valid user")}
                 setUser(data);
             } catch (error) {
                 console.error(error);
