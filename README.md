@@ -12,6 +12,7 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 ### Usage
 
 -   Open your terminal and navigate to the `your-repo-story` folder
+-   Run `npm install` to install dependencies
 -   Run `npm run dev` which should start up the webpage on localhost:8080/
 -   Run `npm run test` to start up the unit tests
 
