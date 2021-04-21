@@ -8,6 +8,7 @@ const Header = () => {
                 <img
                     id="logo"
                     src="https://img.icons8.com/ios/452/github.png"
+                    alt="logo"
                 ></img>
             </div>
             <h1 id="main-heading">Your Repo Story</h1>

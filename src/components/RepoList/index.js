@@ -15,8 +15,9 @@ const RepoList = ({ username }) => {
             try {
                 const {data} = await axios.get(`${API_URL}/users/${username}`);
                 setUser(data);
-                setError();
+                // setError();
             } catch (error) {
+                setUser();
                 console.error(error);
             }
         }
@@ -25,6 +26,7 @@ const RepoList = ({ username }) => {
                 const {data} = await axios.get(`${API_URL}/users/${username}/repos`);
                 setRepos(data);
             } catch (error) {
+                setUser();
                 console.error(error);
             }
         }
@@ -33,7 +35,7 @@ const RepoList = ({ username }) => {
         getRepos();
     }, [username]);
 
-    const reposList = Array.isArray(repos) && repos.map(repo => <RepoCard key={repo.id} repo={repo} />);
+    const reposList = Array.isArray(repos) && repos.map(repo => <RepoCard role="listitem" key={repo.id} repo={repo} />);
 
     return (
         <section className="user-repos">

@@ -3,8 +3,7 @@ import UserCard from '.';
 
 describe('UserCard', () => {
     const mockUser = {
-        name: "test-user", description: "test", 
-        forks_count: 2, stargazers_count:6, watchers_count:0
+        login: "test-user", avatar_url:"", html_url: ""
     }
 
     beforeEach(() => {

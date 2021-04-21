@@ -4,8 +4,9 @@ import { screen, getByLabelText } from '@testing-library/react';
 
 
 describe('App', () => {
+    let setUsernameMock =jest.fn();
     beforeEach(() => {
-        render(<SearchForm />);
+        render(<SearchForm setUsername={setUsernameMock} />);
     });
 
 
