@@ -1,4 +1,5 @@
 # Your Repo Story :book:
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6121e661-8975-443e-afee-d7ac36303674/deploy-status)](https://app.netlify.com/sites/your-repo-story/deploys)
 
 Are you as popular on GitHub as you think you are? Well now you can find out! Our repo tracker allows you to search for a particular GitHub user and retrieve their list of repos, including data such as description and the number of forks, stars and watchers. A link to each repo is also auto-generated.
 
@@ -13,6 +14,8 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 -   Open your terminal and navigate to the `your-repo-story` folder
 -   Run `npm run dev` which should start up the webpage on localhost:8080/
 -   Run `npm run test` to start up the unit tests
+
+Deployed site can be accessed here: https://your-repo-story.netlify.app/
 
 **_If you are using our app and no repo information is retreived when you search for a user then please check in your dev tools to see if you have hit the API hourly rate limit for your IP address_**
 
@@ -43,6 +46,7 @@ This app was created by [@roselynle](https://github.com/roselynle), [@emmanuel-s
 -   Using the react icons library to include icons for forks, stars and watchers
 -   Managing to style the page in a 'timeline' format (although repos are displayed in alphabetical order - perhaps sorting by newest to oldest can be a future feature)
 -   Alert message will pop up if you search for an invalid user
+-   Site is deployed
 
 ### Challenges
 
