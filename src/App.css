@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-
 * {
     box-sizing: border-box;
 }
 
 body {
-  background-color: rgb(241, 241, 241);
+    background-color: rgb(241, 241, 241);
 }
 
 #main-heading {
@@ -23,9 +22,13 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-#logo {
-  text-align: center;
+#header-container {
+    margin-top: 30px;
+}
 
+#logo {
+    text-align: center;
+    margin-bottom: 70px;
 }
 
 .user-avatar {
@@ -36,15 +39,15 @@ body {
 }
 
 #logo {
-  margin-top: 30px;
-  width: 120px;
-  box-shadow: none;
-  display: inline;
+    margin-top: 30px;
+    width: 120px;
+    box-shadow: none;
+    display: inline;
 }
 
 #logo-container {
-  text-align: center;
-  margin-bottom: -40px;
+    text-align: center;
+    margin-bottom: -40px;
 }
 
 img {
@@ -141,25 +144,24 @@ img {
 }
 
 .user-repos {
-  position: relative;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 15px 0;
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px 0;
 }
 
 .user-repos::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  background: rgb(54, 54, 54);
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -1px;
-  margin-top: 284px;
-  z-index: -1;
-
+    content: "";
+    position: absolute;
+    width: 4px;
+    background: rgb(54, 54, 54);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+    margin-top: 284px;
+    z-index: -1;
 }
 
 .forks {
@@ -175,9 +177,9 @@ img {
 }
 
 .watchers {
-  color: rgb(15, 138, 209);
-  display: inline-block;
-  margin: 10px;
+    color: rgb(15, 138, 209);
+    display: inline-block;
+    margin: 10px;
 }
 
 span {
